@@ -24,6 +24,16 @@ GITHUBTARBALL
     homebrew (1.9.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-intellij
+  specs:
+    intellij (1.5.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.8.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -54,6 +64,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vlc
+  specs:
+    vlc (1.0.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
@@ -80,6 +95,8 @@ DEPENDENCIES
   git (= 2.5.0)
   homebrew (= 1.9.5)
   inifile (= 1.1.1)
+  intellij (= 1.5.1)
+  java (= 1.8.0)
   macvim (= 1.0.0)
   module_data (= 0.0.3)
   openssl (= 1.0.0)
@@ -88,5 +105,6 @@ DEPENDENCIES
   ruby (= 8.1.4)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  vlc (= 1.0.6)
   xquartz (= 1.2.1)
 

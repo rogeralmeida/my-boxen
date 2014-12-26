@@ -56,8 +56,6 @@ node default {
   include dnsmasq
   include git
   include hub
-	include macvim
-	#include vlc
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -90,3 +88,4 @@ node default {
     target => $boxen::config::repodir
   }
 }
+

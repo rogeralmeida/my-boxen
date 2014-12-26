@@ -52,6 +52,8 @@ github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 github 'macvim',      "1.0.0"
 github 'vlc',         "1.0.6", :repo => "boxen/puppet-vlc"
+github 'java',				"1.8.0"
+github 'intellij',		"1.5.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
