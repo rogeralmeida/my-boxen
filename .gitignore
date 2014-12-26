@@ -18,3 +18,4 @@ env.sh
 homebrew/
 nodenv/
 rbenv/
+ruby-build/
