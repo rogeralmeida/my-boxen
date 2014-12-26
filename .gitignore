@@ -10,3 +10,11 @@
 /shared/*
 !/shared/README.md
 /vendor/gems/
+cache/
+config/
+data/
+env.d/
+env.sh
+homebrew/
+nodenv/
+rbenv/
