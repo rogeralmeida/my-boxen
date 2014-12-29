@@ -39,6 +39,11 @@ GITHUBTARBALL
     java (1.8.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-jq
+  specs:
+    jq (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -118,6 +123,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   intellij (= 1.5.1)
   java (= 1.8.0)
+  jq (= 1.0.0)
   macvim (= 1.0.0)
   maven (= 1.0.15)
   module_data (= 0.0.3)

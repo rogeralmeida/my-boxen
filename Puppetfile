@@ -58,5 +58,6 @@ github 'gimp',				"1.0.1"
 github 'wget',				"1.0.1"
 github 'scala',				"1.0.3", :repo => "steinim/puppet-scala"
 github 'maven',				"1.0.15", :repo => "rogeralmeida/puppet-maven"
+github 'jq',					"1.0.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

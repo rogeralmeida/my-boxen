@@ -4,6 +4,7 @@ class people::rogeralmeida {
 	include gimp
 	include scala 
 	include maven
+	include jq
 
 	class { 'intellij':
 		edition => 'ultimate',
