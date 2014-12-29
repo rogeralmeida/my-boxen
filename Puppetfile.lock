@@ -99,6 +99,11 @@ GITHUBTARBALL
     module_data (0.0.3)
 
 GITHUBTARBALL
+  remote: rogeralmeida/puppet-maven
+  specs:
+    maven (1.0.15)
+
+GITHUBTARBALL
   remote: steinim/puppet-scala
   specs:
     scala (1.0.3)
@@ -114,6 +119,7 @@ DEPENDENCIES
   intellij (= 1.5.1)
   java (= 1.8.0)
   macvim (= 1.0.0)
+  maven (= 1.0.15)
   module_data (= 0.0.3)
   openssl (= 1.0.0)
   phantomjs (= 2.3.0)

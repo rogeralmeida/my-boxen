@@ -3,6 +3,7 @@ class people::rogeralmeida {
 	include vlc
 	include gimp
 	include scala 
+	include maven
 
 	class { 'intellij':
 		edition => 'ultimate',
@@ -12,8 +13,11 @@ class people::rogeralmeida {
 	$home     = "/Users/${::boxen_user}"
 	$homebrew_bash = '/opt/boxen/homebrew/bin/bash'
 
-  # installs homebrew bash
   package { 'bash': ensure => present, provider => homebrew, }
+	package { 'httpie':
+		ensure => present,
+		provider => homebrew
+	}
 
   # add homebrew bash as a standard shell
   file_line { '/etc/shells':
