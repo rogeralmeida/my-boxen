@@ -1,6 +1,8 @@
 class people::rogeralmeida {
 	include macvim
 	include vlc
+	include gimp
+	include scala 
 
 	class { 'intellij':
 		edition => 'ultimate',

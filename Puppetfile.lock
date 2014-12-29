@@ -14,6 +14,11 @@ GITHUBTARBALL
     gcc (2.2.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-gimp
+  specs:
+    gimp (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
     git (2.5.0)
@@ -69,6 +74,11 @@ GITHUBTARBALL
     vlc (1.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
@@ -88,10 +98,16 @@ GITHUBTARBALL
   specs:
     module_data (0.0.3)
 
+GITHUBTARBALL
+  remote: steinim/puppet-scala
+  specs:
+    scala (1.0.3)
+
 DEPENDENCIES
   boxen (= 3.7.0)
   dnsmasq (= 2.0.0)
   gcc (= 2.2.0)
+  gimp (= 1.0.1)
   git (= 2.5.0)
   homebrew (= 1.9.5)
   inifile (= 1.1.1)
@@ -103,8 +119,10 @@ DEPENDENCIES
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   ruby (= 8.1.4)
+  scala (= 1.0.3)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
   vlc (= 1.0.6)
+  wget (= 1.0.1)
   xquartz (= 1.2.1)
 
