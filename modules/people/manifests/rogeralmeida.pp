@@ -10,11 +10,14 @@ class people::rogeralmeida {
 	include jq
 	include brewcask 
 
-	$brewcask_packages = ['adium', 'firefox', 'gnucash']
-	package { $brewcask_packages : provider => 'brewcask' }
-
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
+
+	$brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
+		'menucalendarclock-ical', 'dropbox', 'gimp', 'google-chrome', 'google-drive',
+		'iterm2', 'keepassx', 'quicksilver', 'steam', 'sublime-text', 'virtualbox',
+		'vagrant', 'spotify']
+	package { $brewcask_packages : provider => 'brewcask' }
 
 	class { 'intellij':
 		edition => 'ultimate',
