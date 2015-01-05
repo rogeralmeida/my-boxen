@@ -9,6 +9,7 @@ class people::rogeralmeida {
 	include maven
 	include jq
 	include brewcask 
+	include vagrant
 
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
