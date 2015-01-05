@@ -79,6 +79,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.2.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-vlc
   specs:
     vlc (1.0.6)
@@ -140,6 +145,7 @@ DEPENDENCIES
   scala (= 1.0.3)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  vagrant (= 3.2.1)
   vlc (= 1.0.6)
   wget (= 1.0.1)
   xquartz (= 1.2.1)
