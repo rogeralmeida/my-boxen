@@ -4,6 +4,11 @@ GITHUBTARBALL
     boxen (3.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-brewcask
+  specs:
+    brewcask (0.0.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.0)
@@ -115,6 +120,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.7.0)
+  brewcask (= 0.0.5)
   dnsmasq (= 2.0.0)
   gcc (= 2.2.0)
   gimp (= 1.0.1)

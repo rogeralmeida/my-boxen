@@ -1,23 +1,24 @@
 class people::rogeralmeida {
+	$home     = "/Users/${::boxen_user}"
+	$homebrew_bash = '/opt/boxen/homebrew/bin/bash'
+
 	include macvim
 	include vlc
 	include gimp
 	include scala 
 	include maven
 	include jq
+	include brewcask 
+
+	$brewcask_packages = ['adium', 'firefox', 'gnucash']
+	package { $brewcask_packages : provider => 'brewcask' }
+
+	$homebrew_packages = [ 'bash', 'httpie', 'mackup' ]
+  package { $homebrew_packages: ensure => present, provider => homebrew }
 
 	class { 'intellij':
 		edition => 'ultimate',
 		version => '14.0.2'
-	}
-
-	$home     = "/Users/${::boxen_user}"
-	$homebrew_bash = '/opt/boxen/homebrew/bin/bash'
-
-  package { 'bash': ensure => present, provider => homebrew, }
-	package { 'httpie':
-		ensure => present,
-		provider => homebrew
 	}
 
   # add homebrew bash as a standard shell
