@@ -11,13 +11,13 @@ class people::rogeralmeida {
 	include brewcask 
 	include vagrant
 
-	$homebrew_packages = [ 'bash', 'httpie', 'mackup' ]
+	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
 
 	$brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
 		'menucalendarclock-ical', 'dropbox', 'gimp', 'google-chrome', 'google-drive',
 		'iterm2', 'keepassx', 'quicksilver', 'steam', 'sublime-text', 'virtualbox',
-		'vagrant', 'spotify']
+		'vagrant', 'spotify', 'chefdk']
 	package { $brewcask_packages : provider => 'brewcask' }
 
 	class { 'intellij':
@@ -38,5 +38,9 @@ class people::rogeralmeida {
     unless  => "dscl . -read /Users/${::boxen_user} UserShell | grep '$homebrew_bash' 2> /dev/null",
     user    => 'root',
     require => File_Line['/etc/shells'],
+  }
+
+  exec { "vagrant plugin install vagrant-vbguest" :
+    require => Package['vagrant']
   }
 }
