@@ -12,7 +12,7 @@ class people::rogeralmeida {
 	include vagrant
   include skype
 
-	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok' ]
+	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 'plantuml' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
 
 	$brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
