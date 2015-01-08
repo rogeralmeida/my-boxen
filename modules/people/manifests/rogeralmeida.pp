@@ -10,6 +10,7 @@ class people::rogeralmeida {
 	include jq
 	include brewcask 
 	include vagrant
+  include skype
 
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }

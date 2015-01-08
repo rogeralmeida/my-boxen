@@ -61,6 +61,7 @@ github 'maven',				"1.0.15", :repo => "rogeralmeida/puppet-maven"
 github 'jq',					"1.0.0"
 github 'brewcask',		"0.0.5"
 github 'vagrant',			"3.2.1"
+github 'skype',				'1.1.0'
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
