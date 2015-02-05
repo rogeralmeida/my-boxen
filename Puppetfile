@@ -63,6 +63,7 @@ github 'brewcask',		"0.0.5"
 github 'vagrant',			"3.2.1"
 github 'skype',				'1.1.0'
 github 'skitch',			'1.0.3'
+github 'omnigraffle', '1.3.0', :repo => 'dieterdemeyer/puppet-omnigraffle'
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

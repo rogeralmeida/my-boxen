@@ -12,6 +12,7 @@ class people::rogeralmeida {
 	include vagrant
   include skype
   include skitch
+  include omnigraffle::pro
 
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 'plantuml' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
