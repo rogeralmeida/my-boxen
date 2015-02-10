@@ -13,8 +13,10 @@ class people::rogeralmeida {
   include skype
   include skitch
   include omnigraffle::pro
+  include heroku
+  include rstudio
 
-	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 'plantuml' ]
+	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 'plantuml', 'awscli' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
 
 	$brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 

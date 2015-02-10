@@ -29,6 +29,11 @@ GITHUBTARBALL
     git (2.5.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-heroku
+  specs:
+    heroku (2.1.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.9.5)
@@ -138,6 +143,11 @@ GITHUBTARBALL
   specs:
     scala (1.0.3)
 
+GITHUBTARBALL
+  remote: taoistmath/puppet-rstudio
+  specs:
+    rstudio (1.0.0)
+
 DEPENDENCIES
   boxen (= 3.7.0)
   brewcask (= 0.0.5)
@@ -145,6 +155,7 @@ DEPENDENCIES
   gcc (= 2.2.0)
   gimp (= 1.0.1)
   git (= 2.5.0)
+  heroku (= 2.1.1)
   homebrew (= 1.9.5)
   inifile (= 1.1.1)
   intellij (= 1.5.1)
@@ -157,6 +168,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  rstudio (= 1.0.0)
   ruby (= 8.1.4)
   scala (= 1.0.3)
   skitch (= 1.0.3)
