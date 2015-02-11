@@ -64,6 +64,7 @@ github 'vagrant',			"3.2.1"
 github 'skype',				'1.1.0'
 github 'skitch',			'1.0.3'
 github 'heroku',			'2.1.1'
+github 'jmeter',			'0.1.5'
 github 'omnigraffle', '1.3.0', :repo => 'dieterdemeyer/puppet-omnigraffle'
 github 'rstudio',     '1.0.0', :repo => 'taoistmath/puppet-rstudio'
 

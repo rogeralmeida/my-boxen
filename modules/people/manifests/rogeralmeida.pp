@@ -15,6 +15,7 @@ class people::rogeralmeida {
   include omnigraffle::pro
   include heroku
   include rstudio
+  include jmeter
 
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 'plantuml', 'awscli' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
