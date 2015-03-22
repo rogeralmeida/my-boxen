@@ -17,7 +17,8 @@ class people::rogeralmeida {
   include rstudio
   include jmeter
 
-	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 'plantuml', 'awscli' ]
+	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 
+  'plantuml', 'awscli', 'selecta' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
 
 	$brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
