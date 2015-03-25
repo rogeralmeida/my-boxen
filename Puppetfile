@@ -67,6 +67,8 @@ github 'heroku',			'2.1.1'
 github 'jmeter',			'0.1.5'
 github 'omnigraffle', '1.3.0', :repo => 'dieterdemeyer/puppet-omnigraffle'
 github 'rstudio',     '1.0.0', :repo => 'taoistmath/puppet-rstudio'
+github 'vundle',      '0.0.2', :repo => 'bdossantos/puppet-vundle'
+'
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

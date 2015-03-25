@@ -16,6 +16,7 @@ class people::rogeralmeida {
   include heroku
   include rstudio
   include jmeter
+  include vundle
 
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 
   'plantuml', 'awscli', 'selecta' ]
