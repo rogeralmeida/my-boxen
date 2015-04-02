@@ -16,7 +16,6 @@ class people::rogeralmeida {
   include heroku
   include rstudio
   include jmeter
-  include vundle
 
 	$homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 
   'plantuml', 'awscli', 'selecta' ]
@@ -25,7 +24,7 @@ class people::rogeralmeida {
 	$brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
 		'menucalendarclock-ical', 'dropbox', 'gimp', 'google-chrome', 'google-drive',
 		'iterm2', 'keepassx', 'quicksilver', 'steam', 'sublime-text', 'virtualbox',
-		'vagrant', 'spotify', 'chefdk']
+		'vagrant', 'spotify', 'chefdk', 'thunderbird']
 	package { $brewcask_packages : provider => 'brewcask' }
 
 	class { 'intellij':
@@ -50,5 +49,11 @@ class people::rogeralmeida {
 
   exec { "vagrant plugin install vagrant-vbguest" :
     require => Package['vagrant']
+  }
+
+#Still a problem, must find a way to remove the hard coded home path
+  exec { "git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim" :
+    require => Package['macvim'],
+    creates => '/Users/ralmeid/.vim/bundle/Vundle.vim/README.md'
   }
 }
