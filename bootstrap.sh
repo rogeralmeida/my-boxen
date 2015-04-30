@@ -1,3 +1,10 @@
+GIT_USER=`git config --get user.name`
+if [ -z ${GIT_USER} ]; then
+	echo -n "Please enter your git user.name: "
+	read GIT_USER
+	git config --global user.name "${GIT_USER}"
+fi
+
 echo "Installing Command-Line-Tools and Xcode 5"
 xcode-select --install
 
