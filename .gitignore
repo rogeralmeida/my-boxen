@@ -25,3 +25,5 @@ our-boxen
 apache-maven/
 heroku/
 *.swp
+.DS_Store
+my-boxen
