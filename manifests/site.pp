@@ -56,36 +56,34 @@ node default {
   include dnsmasq
   include git
   include hub
+  include macvim
+  # include vlc
+  include gimp
+  # include scala 
+  # include maven
+  include jq
+  include brewcask 
+  include vagrant
+  include skype
+  include skitch
+  # include omnigraffle::pro
+  include heroku
+  # include rstudio
+  # include jmeter
+  include virtualbox
 
-  # fail if FDE is not enabled
-  if $::root_encrypted == 'no' {
-    fail('Please enable full disk encryption and try again')
-  }
+  $homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 
+  'plantuml', 'awscli', 'selecta', 'fasd' ]
+  package { $homebrew_packages: ensure => present, provider => homebrew }
 
-  # node versions
-  include nodejs::v0_6
-  include nodejs::v0_8
-  include nodejs::v0_10
+  $brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
+    'menucalendarclock-ical', 'dropbox', 'gimp', 'google-chrome', 'google-drive',
+    'iterm2', 'keepassx', 'quicksilver', 'steam', 'sublime-text', 
+    'vagrant', 'spotify', 'chefdk', 'thunderbird']
+  package { $brewcask_packages : provider => 'brewcask' }
 
-  # default ruby versions
-  ruby::version { '1.9.3': }
-  ruby::version { '2.0.0': }
-  ruby::version { '2.1.0': }
-  ruby::version { '2.1.1': }
-  ruby::version { '2.1.2': }
-
-  # common, useful packages
-  package {
-    [
-      'ack',
-      'findutils',
-      'gnu-tar'
-    ]:
-  }
-
-  file { "${boxen::config::srcdir}/our-boxen":
-    ensure => link,
-    target => $boxen::config::repodir
-  }
+  exec {'git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt':}
+  exec {'git clone https://github.com/rogeralmeida/mydotfiles.git ~/mydotfiles':}
+  exec {'ln -s ~/mydofiles/.bash_profile ~/.bash_profile':}
 }
 
