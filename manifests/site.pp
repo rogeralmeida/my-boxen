@@ -73,7 +73,7 @@ node default {
   include virtualbox
 
   $homebrew_packages = [ 'bash', 'httpie', 'mackup', 'tree', 'ngrok', 'graphviz', 
-  'plantuml', 'awscli', 'selecta', 'fasd', 'tmux' ]
+  'plantuml', 'awscli', 'selecta', 'fasd', 'tmux', 'chromedriver' ]
   package { $homebrew_packages: ensure => present, provider => homebrew }
 
   $brewcask_packages = ['adium', 'firefox', 'gnucash', 'evernote', 'caffeine', 
